@@ -90,7 +90,7 @@
               <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="500">
                 <div class="u-container-layout u-valign-top u-container-layout-5">
                   <p class="u-text u-text-8">Estamos abrindo vagas para cientistas de todos os ramos, para receberem toda a atenção necessária para tornar a sua imagem, ainda mais inspiradora! Nossa equipe trabalha incansavelmente para garantir o seu sucesso! Se inscreva na nossa newsletter e fique por dentro dos projetos e vagas disponíveis!</p>
-                  <a href="google.com" class="u-btn u-btn-round u-button-style u-radius-50 u-btn-1" target="_blank">Inscreva-se</a>
+                  <a href="google.com" class="u-btn u-btn-round u-button-style u-radius-50 u-btn-1" target="_blank">aqui a gnt bota um forms</a>
                 </div>
               </div>
             </div>
@@ -204,7 +204,7 @@
             <h5 class="u-text u-text-default u-text-1"> Desenvolvimento produtivo<br>
             </h5>
             <h2 class="u-text u-text-2"> Cientista, o farol da ciência!</h2>
-            <a href="https://www.ufrgs.br/acienciacomoelae/" class="u-btn u-btn-round u-button-style u-palette-1-base u-radius-50 u-btn-1" target="_blank">Saiba Mais!</a>
+            <a href="google.com" class="u-btn u-btn-round u-button-style u-palette-1-base u-radius-50 u-btn-1" target="_blank">Aqui a gnt bota um forms ou um link da revista</a>
           </div>
         </div>
       </div>
@@ -227,7 +227,7 @@
           <div class="u-container-layout u-valign-middle u-container-layout-2">
             <h5 class="u-text u-text-default u-text-1"> Vagas limitadas<br>
             </h5>
-            <h2 class="u-text u-text-2"> Até mesmo a luz do farol precisa de manutenção</h2>
+            <h2 class="u-text u-text-2"> Até mesmo a luz do farol, precisa de manutenção</h2>
             <p class="u-text u-text-3">Não deixe sua luz apagar, garanta já sua vaga!</p>
             <a href="google.com" class="u-btn u-btn-round u-button-style u-palette-1-base u-radius-50 u-btn-1" target="_blank">aqui a gnt bota um pdf basicão explicando td</a>
           </div>
@@ -284,6 +284,16 @@
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-fb45"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-small-text u-text u-text-variant u-text-1">Landing page do projeto Farol da ciência, assessoria de imagem para cientistas.</p>
       </div></footer>
-    
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
+        <span>HTML Template</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span>Website Builder Software</span>
+      </a>. 
+    </section>
   
 </body></html>
