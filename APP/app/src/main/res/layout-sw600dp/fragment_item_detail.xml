@@ -1,0 +1,360 @@
+<!-- Adding the same root's ID for view binding as other layout configurations -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_detail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/item_detail"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:textIsSelectable="true"
+        tools:context="com.example.mostre_se.ItemDetailFragment" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:minHeight="48dp"
+        android:paddingTop="25dp"
+        android:showText="false"
+        android:text="@string/title_item_detail"
+        android:textSize="10sp"
+        app:layout_anchor="@+id/item_detail_scroll_view"
+        app:layout_anchorGravity="start|top"
+        tools:checked="false"
+        tools:text="Modo escuro" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="258dp"
+        android:layout_height="277dp"
+        android:contentDescription="@android:string/untitled"
+        app:layout_anchor="@+id/app_bar"
+        app:layout_anchorGravity="start|center"
+        app:srcCompat="@drawable/logo_mostre_se" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:paddingTop="15dp"
+        android:text="@string/title_item_detail"
+        android:textAlignment="center"
+        android:textColor="#FFE500"
+        app:layout_anchor="android:labelfor"
+        app:layout_anchorGravity="center"
+        tools:text="Seja bem vindo à primeira plataforma que conecta cientistas e suas pesquisas com empresas que buscam avanços e desempenho!" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/chat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|start"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:contentDescription="@string/fab_transformation_sheet_behavior"
+        android:enabled="true"
+        android:fadeScrollbars="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keepScreenOn="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        app:layout_anchor="@+id/item_detail_scroll_view"
+        app:layout_anchorGravity="top|end"
+        app:srcCompat="@android:drawable/stat_notify_chat"
+        app:useCompatPadding="true" />
+
+    <TextView
+        android:id="@+id/item_detail2"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/title_item_detail"
+        android:paddingStart="@dimen/container_horizontal_margin"
+        android:paddingTop="20dp"
+        android:paddingEnd="@dimen/container_horizontal_margin"
+        android:paddingBottom="16dp"
+        android:textAlignment="center"
+        android:textIsSelectable="true"
+        tools:context="com.example.mostre_se.ItemDetailFragment"
+        tools:ignore="DuplicateSpeakableTextCheck"
+        tools:text="Converse conosco e descubra a melhor opção para iniciar uma carreira de sucesso como cientista!" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/item_detail_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/item_detail"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/title_item_detail"
+            android:paddingStart="@dimen/container_horizontal_margin"
+            android:paddingTop="20dp"
+            android:paddingEnd="@dimen/container_horizontal_margin"
+            android:paddingBottom="16dp"
+            android:textAlignment="center"
+            android:textIsSelectable="true"
+            tools:context="com.example.mostre_se.ItemDetailFragment"
+            tools:ignore="DuplicateSpeakableTextCheck"
+            tools:text="Converse conosco e descubra a melhor opção para iniciar uma carreira de sucesso como cientista!" />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:clipToPadding="true"
+        android:orientation="vertical"
+        app:layout_collapseMode="pin">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:paddingLeft="170dp"
+            android:paddingRight="170dp"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#FFDB00"
+            android:textStyle="bold"
+            tools:text="Mostre-se" />
+
+    </LinearLayout>
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:contentScrim="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:toolbarId="@+id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:clipToPadding="true"
+            android:orientation="vertical"
+            app:layout_collapseMode="pin">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:paddingLeft="170dp"
+                android:paddingRight="170dp"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#FFDB00"
+                android:textStyle="bold"
+                tools:text="Mostre-se" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <LinearLayout
+                android:id="@+id/detail_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:clipToPadding="true"
+                android:orientation="vertical"
+                app:layout_collapseMode="pin">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:paddingLeft="170dp"
+                    android:paddingRight="170dp"
+                    android:text="@string/app_name"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#FFDB00"
+                    android:textStyle="bold"
+                    tools:text="Mostre-se" />
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/item_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ItemDetailHostActivity"
+        tools:ignore="MergeRootFrame">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bar_height"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:toolbarId="@+id/toolbar">
+
+                <LinearLayout
+                    android:id="@+id/detail_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:clipToPadding="true"
+                    android:orientation="vertical"
+                    app:layout_collapseMode="pin">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:paddingLeft="170dp"
+                        android:paddingRight="170dp"
+                        android:text="@string/app_name"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="#FFDB00"
+                        android:textStyle="bold"
+                        tools:text="Mostre-se" />
+
+                </LinearLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/item_detail_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:id="@+id/item_detail"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/title_item_detail"
+                android:paddingStart="@dimen/container_horizontal_margin"
+                android:paddingTop="20dp"
+                android:paddingEnd="@dimen/container_horizontal_margin"
+                android:paddingBottom="16dp"
+                android:textAlignment="center"
+                android:textIsSelectable="true"
+                tools:context="com.example.mostre_se.ItemDetailFragment"
+                tools:ignore="DuplicateSpeakableTextCheck"
+                tools:text="Converse conosco e descubra a melhor opção para iniciar uma carreira de sucesso como cientista!" />
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:contentDescription="@string/fab_transformation_sheet_behavior"
+            android:enabled="true"
+            android:fadeScrollbars="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:keepScreenOn="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            app:layout_anchor="@+id/item_detail_scroll_view"
+            app:layout_anchorGravity="top|end"
+            app:srcCompat="@android:drawable/stat_notify_chat"
+            app:useCompatPadding="true" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine2"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:paddingTop="15dp"
+            android:text="@string/title_item_detail"
+            android:textAlignment="center"
+            android:textColor="#FFE500"
+            app:layout_anchor="android:labelfor"
+            app:layout_anchorGravity="center"
+            tools:text="Seja bem vindo à primeira plataforma que conecta cientistas e suas pesquisas com empresas que buscam avanços e desempenho!" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="258dp"
+            android:layout_height="277dp"
+            android:contentDescription="@android:string/untitled"
+            app:layout_anchor="@+id/app_bar"
+            app:layout_anchorGravity="start|center"
+            app:srcCompat="@drawable/logo_mostre_se" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:minHeight="48dp"
+            android:paddingTop="25dp"
+            android:showText="false"
+            android:text="@string/title_item_detail"
+            android:textSize="10sp"
+            app:layout_anchor="@+id/item_detail_scroll_view"
+            app:layout_anchorGravity="start|top"
+            tools:checked="false"
+            tools:text="Modo escuro" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
